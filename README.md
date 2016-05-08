@@ -1,6 +1,7 @@
 # iNotice.js
 iOS Notification implementation of on the browser
 
+[CodePen](http://codepen.io/amusan/pen/VagzVQ)  
 ![Output sample](https://github.com/asari-koto/inotice.js/raw/master/inotice-test.gif)
 ## Getting started
 
