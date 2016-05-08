@@ -3,33 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="inotice.css">
+  <script src="inotice.js"></script>
   <title>iOS Notification</title>
 </head>
 <body>
-  <div class="ios-notification-bar-wrapper">
-    <div class="ios-notification-bar">
-      <div class="main-wrapper">
-        <div class="icon">
-          <img src="">
-        </div>
-        <div class="message-wrapper">
-          <div class="message">
-            <div class="row1">
-              <p class="systemname"></p>
-              <p class="time"></p>
-            </div>
-            <div class="row2">
-              <p class="notification"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="hole"></div>
-    </div>
-  </div>
-
   <div id="inotice-btn" onClick="inoticeStartBtn();">iNotice!</div>
-  <script src="inotice.js"></script>
+
   <script>
     function inoticeStartBtn() {
       INotice.start();
@@ -47,9 +26,9 @@
       margin: 0 auto;
       width: 200px;
       height: 50px;
-      top: 400px;
-      left: 0;
-      right: 0;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
 
       letter-spacing: 0.05em;
       font-size: 1.2em;
@@ -62,7 +41,7 @@
       background-color: #f3a71a;
     }
     #inotice-btn:hover {
-      background-color: #facd39;
+      background-color: #f6b02f;
     }
   </style>
 </body>
