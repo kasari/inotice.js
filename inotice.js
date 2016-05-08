@@ -1,11 +1,4 @@
 var INotice = new function() {
-  var defaultConfig = {
-    systemName: 'LINE',
-    imageUrl: 'https://lh4.ggpht.com/IkQ_kmk57G3fFkTOmtfQdp2XTZ8gic119yqvsKDkvbuPotfC7R05JPBdtuGm3OmA15xE=w300',
-    time: 'now',
-    notification: 'Hello, iOSNotification'
-  };
-
   var isActiveFlag = false;
   var $bar, $time, $systemName, $notification, $icon;
 
@@ -50,10 +43,9 @@ var INotice = new function() {
   }
 
   this.start = function(config) {
-    var cfg = config || defaultConfig;
-    setSystem(cfg.systemName, cfg.imageUrl);
-    setTime(cfg.time);
-    setNotification(cfg.notification);
+    setSystem(config.systemName, config.imageUrl);
+    setTime(config.time);
+    setNotification(config.notification);
 
     if (!isActiveFlag) {
       open();
